@@ -1,5 +1,4 @@
 import check50
-import check50.c
 
 @check50.check()
 def compiles():
@@ -9,4 +8,4 @@ def compiles():
 @check50.check(compiles)
 def prints_hello():
     """prints exactly hello world"""
-    check50.run("./hello").stdout("hello world").exit(0)
+    check50.run("./hello").stdout("[Hh]ello world", "hello world").exit(0)
